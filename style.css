@@ -1,0 +1,81 @@
+body {
+    background-color: #fac5c5;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}
+
+.calculator-container {
+
+    width: 600px;
+    height: 600px;
+    margin: 0 auto;
+    background-color: #837e7e;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(95, 2, 52, 0.5);
+    text-align: center;
+}
+
+h1 {
+    font-size: 24px;
+    margin-bottom: 20px;
+}
+
+.calculator {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    width: 100%;
+
+    
+}
+
+.calculator input {
+    grid-column: span 4;
+    text-align: right;
+    font-size: 24px;
+    padding: 10px;
+    border: none;
+    border-bottom: 1px solid #ccc;
+    background-color: #d3bfbf;
+    color: #302f2f;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.calculator button {
+    width: 100%;
+    height: 110px;
+    font-size: 25px;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+    background-color:#4e042f;
+    color: #fff;
+    transition: background-color 0.2s, color 0.2s;
+}
+
+.calculator button:hover {
+    background-color: #023241;
+}
+
+.calculator button:active {
+    background-color: #242c2e;
+}
+
+/* Add more styling for the clear and equal buttons */
+.calculator button[value="C"] {
+    background-color: #360d0b;
+}
+
+.calculator button[value="C"]:hover {
+    background-color: #055857;
+}
+
+.calculator button[value="="] {
+    background-color: #343735;
+}
+
+.calculator button[value="="]:hover {
+    background-color: #32152d;
+}
